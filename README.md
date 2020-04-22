@@ -7,3 +7,11 @@ Ejecutar comando
 ````
 npm install
 ````
+
+Y después el comando en la ubicación del proyecto
+
+````
+gulp
+````
+
+
