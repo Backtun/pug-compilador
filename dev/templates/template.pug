@@ -1,10 +1,17 @@
 //- Nuestra plantilla
 //- Todo codigo comun irá en este archivo
 doctype
-html
+html(lang="es")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet" href="style.css")
         title Document
     body
+        header.header
+            block header
+                h1 title
+        main.main
+            block main
+        footer.footer
+            block footer
