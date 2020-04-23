@@ -1,0 +1,29 @@
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Document
+	body
+		//- Variable boolean
+		-let username = true
+
+		//- Operador if else
+		if username
+			p Bienvenido usuario
+		else if username == null
+			p Usuario no existe
+		else
+			p Registrese para continuar
+
+		//- Operador ternario
+		p(class=username ? 'registrado': 'noregistrado')
+
+		//- Operador de negación
+		//- es igual a unless username
+		if !username 
+			p Bienvenido usuario
+		else
+			p Bienvenido para continuar
+		
+		
+			

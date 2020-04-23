@@ -1,0 +1,44 @@
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Document
+	body
+		-const names = ['kevin','evelyn','laura','carlos']
+		-const names2 = []
+
+		each name in names
+			p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
+
+		//- each name in names2.length ? names2: ['No names']
+		//- 	p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
+
+		each name in names2
+			p= `${name.charAt(0).toUpperCase()}${name.substring(1)}`
+		else 
+			p
+				span No names
+
+		-	
+			const person={
+				name:'kevin',
+				email: 'backtunn@gmail.com'
+			}
+
+		//- Recorriendo un objeto
+		each value, key in person
+			p= `${key}: ${value}`
+
+		//- Recorriendo un arraglo agregando index(key)
+		each value, index in names
+			p= `${index+1}: ${value}`
+
+		//- Bucle While
+		-let n= 0
+			ul
+				while n<5
+					li= n++
+
+
+
+
