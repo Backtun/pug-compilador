@@ -1,12 +1,19 @@
 extends ../templates/template
+include ../mixins/link
+include ../mixins/list
 
 //- Append(antes) o prepend(después)
 append header
 	h2 subtitutlo
 
+//- block main
+//- 	each name in names
+//- 		p= name
+
 block main
-	each name in names
-		p= name
+	+link('/enlace','enlace')
+	ul
+		+list(names)
 
 
 
