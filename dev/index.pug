@@ -3,48 +3,27 @@ html
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		title Document
-
-		//- Opción 1
-		link(rel="stylesheet", href="styles.css")
-
-		//- Opción 2
-		style.
-			body{
-				background-color: red;
-			}
 	body
-		//- Opción 3
-		header(style={"background": "red", "margin-top":"20px"})
+		//- Variable boolean
+		-let username = true
 
-		//- Llamar archivo js
-		script(src="scripts.js")
-		//- Script embedido
-		script.
-			const alert= () =>{
-				alert('Hola mundo');
-			}
+		//- Operador if else
+		if username
+			p Bienvenido usuario
+		else if username == null
+			p Usuario no existe
+		else
+			p Registrese para continuar
 
-		//- Variables de js
-		-const name = "Dorian"
-		-const numbers = [1,2,3,4,5]
+		//- Operador ternario
+		p(class=username ? 'registrado': 'noregistrado')
 
-		p= `Hola ${name}`
-
-		ul 
-			li= numbers[0]
-			li= numbers[1]
-			li= numbers[2]
-			li= numbers[3]
-			li= numbers[4]
-
-		//- Objetos
-		-
-			const person = {
-				name: 'Kevin',
-				surname: 'Dominguez',
-				age: 24
-			}
-
-		p= `${person.name} ${person.surname} tiene ${person.age}`
+		//- Operador de negación
+		//- es igual a unless username
+		if !username 
+			p Bienvenido usuario
+		else
+			p Bienvenido para continuar
+		
 		
 			
